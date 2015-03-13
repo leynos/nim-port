@@ -22,7 +22,7 @@
 -      elif prefix == "/usr/local": libpath = "/usr/local/lib/nim"
 -      else: libpath = joinPath(prefix, "lib")
 -    else: libpath = joinPath(prefix, "lib")
-+    libpath = joinPath(prefix, "lib/nimrod")
++    libpath = joinPath(prefix, "lib/nim")
 +    if not ExistsDir(libpath): libpath = joinPath(prefix, "lib")
  
    if optSkipConfigFile notin gGlobalOptions:

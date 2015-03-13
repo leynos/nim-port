@@ -1,11 +1,11 @@
 # Created by: Neal Nelson <ports@nicandneal.net>
 # $FreeBSD: head/lang/nimrod/Makefile 351413 2014-04-16 19:12:50Z tijl $
 
-PORTNAME=	nimrod
-PORTVERSION=	0.9.2
+PORTNAME=	nim
+PORTVERSION=	0.10.2
 PORTREVISION=	1
 CATEGORIES=	lang
-MASTER_SITES=	http://nimrod-code.org/download/
+MASTER_SITES=	http://nim-lang.org/download/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@nicandneal.net
@@ -17,7 +17,7 @@ OPTIONS_DEFINE=	DOCS
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		compiler zip
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 .include <bsd.port.pre.mk>
 

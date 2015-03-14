@@ -30,7 +30,7 @@ do-build:
 	cd ${WRKSRC} && ${SETENV} CC="${CC}" LINKER="${CC}" \
 		COMP_FLAGS="${CPPFLAGS} ${CFLAGS}" LINK_FLAGS="${LDFLAGS}" \
 		${SH} build.sh
-	cd ${WRKSRC} && bin/nimrod c --parallelBuild=${MAKE_JOBS_NUMBER} koch
+	cd ${WRKSRC} && bin/nim c --parallelBuild=${MAKE_JOBS_NUMBER} koch
 	cd ${WRKSRC} && ./koch boot --parallelBuild=${MAKE_JOBS_NUMBER} \
 		-d:release
 

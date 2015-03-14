@@ -23,7 +23,7 @@
 -      else: libpath = joinPath(prefix, "lib")
 -    else: libpath = joinPath(prefix, "lib")
 +    libpath = joinPath(prefix, "lib/nim")
-+    if not ExistsDir(libpath): libpath = joinPath(prefix, "lib")
++    if not existsDir(libpath): libpath = joinPath(prefix, "lib")
  
    if optSkipConfigFile notin gGlobalOptions:
      readConfigFile(getSystemConfigPath(cfg))
